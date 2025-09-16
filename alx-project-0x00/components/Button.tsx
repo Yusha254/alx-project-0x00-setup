@@ -12,13 +12,13 @@ const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
   shape = "rounded-md",
-  className = "",
+  styles = "",
   onClick,
 }) => {
   return (
     <button
       onClick={onClick}
-      className={`bg-blue-600 text-white font-medium ${sizeClasses[size]} ${shape} hover:bg-blue-700 transition ${className}`}
+      className={`font-medium ${sizeClasses[size]} ${shape} ${styles} hover:opacity-90 transition`}
     >
       {title}
     </button>
